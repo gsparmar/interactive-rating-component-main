@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 0.8rem;
+}
+
+.thank-you {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.card {
+  width: 400px;
+  background-color: var(--veryDarkBlue);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+.card-ty {
+  width: 400px;
+  background-color: var(--darkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+
+.card-ty img {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.rate {
+  text-align: center;
+  font-family: inherit;
+  color: var(--orange);
+}
+.card-ty h1 {
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 0.3rem;
+  font-family: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.ty-msg {
+  color: var(--mediumGrey);
+}
+
+.title {
+  padding-top: 1rem;
+  padding-bottom: 0.4rem;
+  font-family: inherit;
+  color: var(--white);
+}
+
+p {
+  font-size: 15px;
+  font-family: inherit;
+  color: var(--lightGrey);
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--darkBlue);
+  border: none;
+  color: var(--lightGrey);
+  cursor: pointer;
+  transition: 0.3;
+}
+.btn:hover {
+  background-color: var(--orange);
+}
+
+.btn:focus {
+  background-color: var(--mediumGrey);
+}
+
+.submit {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 0.9rem;
+  border: none;
+  font-family: inherit;
+  letter-spacing: 0.4rem;
+}
+
+.submit:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
